@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "start": "node backend/app.js",
+    "server": "nodemon backend/app.js",
+    "client": "npm start --prefix frontend",
+    "dev": "npm run client",
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
+    "netlify-deploy": "netlify deploy --prod"
+  },
+  "dependencies": {
+    "react-toastify": "^10.0.6",
+    "serverless-http": "^3.2.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "netlify-cli": "^17.37.2"
+  }
+}
